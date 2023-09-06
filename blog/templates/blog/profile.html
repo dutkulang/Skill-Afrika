@@ -1,0 +1,49 @@
+{% extends "main.html" %}
+{% block content %}
+    {% include "navbar.html" %}
+    {% if profile %}
+    <div class="expert-profile">
+        <aside>
+            <!-- <img class="expert-photo" src="assets/images/dut.jpg" alt="">      -->
+            <div>
+                <img class="expert-photo" src="{{ profile.photo.url }}" alt="{{profile.full_name}}">
+            </div>
+            
+            
+            <div class="expert-info">
+            <span class="expert-name">{{ profile.full_name }}</span>
+            {% if skills %}
+            {% for skill in skills %}
+                <span class="skills">{{ skill.name }}</span>
+            {% endfor %}
+            {% else %}
+            <span class="skills">{{ skill.name }}</span>
+            {% endif %}            
+
+            <button class="btn"><a href="">Download resume</a></button>
+            </div>
+        </aside>
+
+        <div class="bio">
+            <h2 >Bio</h2>
+            {% if profile.bio%}
+            <p class="bio-text">{{ profile.bio }}</p>
+            {% endif %}
+            <h2>Contact</h2>
+            <p class="expert-phone">Tel: +256782466476</p>
+            <p>Email: dutkulang@lead.asknet</p> 
+
+            <div class="contacts">
+                <a class="email" type="email" href="mailto: dut@lead.asknet.com"><i class="bi bi-envelope" ></i></a>
+                <a class="phone" type="phone" href="tel: +256782466476"><i class="bi bi-telephone-fill"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href><i class="bi bi-whatsapp"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    {% endif %}
+    {% include "footer.html" %}
+    
+{% endblock content %}
