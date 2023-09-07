@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from account.models import Profile, Country, Region,Skill
 def home(request):
     context = {
@@ -29,3 +29,7 @@ def profile(request, pk):
         'profile': Profile.objects.get(pk=pk)
     }
     return render(request, 'blog/profile.html', context) 
+
+
+def about(request):
+    return render(request, "about.html")
