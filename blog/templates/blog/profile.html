@@ -30,14 +30,28 @@
             <p class="bio-text">{{ profile.bio }}</p>
             {% endif %}
             <h2>Contact</h2>
-            <p class="expert-phone">Tel: +256782466476</p>
-            <p>Email: dutkulang@lead.asknet</p> 
-
+            {% if profile.telephone_number %}           
+            <p class="expert-phone">Tel:{{ profile.telephone_number }}</p>
+            {% endif %}
+            {% if profile.email %}
+            <p>Email:{{ profile.email }}</p> 
+            {% endif %}
             <div class="contacts">
-                <a class="email" type="email" href="mailto: dut@lead.asknet.com"><i class="bi bi-envelope" ></i></a>
-                <a class="phone" type="phone" href="tel: +256782466476"><i class="bi bi-telephone-fill"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href><i class="bi bi-whatsapp"></i></a>
+                {% if profile.email %}
+                <a class="email" type="email" href="mailto:{{ profile.email }}"><i class="bi bi-envelope"></i></a>
+                {% endif %}
+
+                {% if profile.telephone_number %}
+                <a class="phone" type="phone" href="tel: {{ profile.telephone_number }}"><i class="bi bi-telephone-fill"></i></a>                  
+                {% endif %}
+
+                {% if profile.facebook_username %}
+                <a href="https://www.facebook.com/{{ profile.facebook_username }}"><i class="bi bi-facebook"></i></a>
+                {% endif %}
+
+                {% if profile.whatsapp_number %}
+                <a href="https://wa.me/{{ profile.whatsapp_number }}"><i class="bi bi-whatsapp"></i></a>
+                {% endif %}
             </div>
 
         </div>
