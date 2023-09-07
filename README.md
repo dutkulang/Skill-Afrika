@@ -3,6 +3,18 @@ ALX end of foundations project
 
 ![site review](preview_assets/Screenshot%20from%202023-09-06%2017-50-26.png)
 
+![site review](preview_assets/Screenshot%20from%202023-09-06%2019-57-58.png)
+
+![site review](preview_assets/Screenshot%20from%202023-09-06%2019-58-02.png)
+
+![site review](preview_assets/Screenshot%20from%202023-09-06%2019-58-06.png)
+
+![site review](preview_assets/Screenshot%20from%202023-09-06%2020-03-32.png)
+
+![site review](preview_assets/Screenshot%20from%202023-09-06%2020-03-38.png)
+
+![site review](preview_assets/Screenshot%20from%202023-09-07%2013-34-08.png)
+
 ![](preview_assets/Screenshot%20from%202023-09-06%2019-06-43.png)
 
 ---
