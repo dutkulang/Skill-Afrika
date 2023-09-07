@@ -1,8 +1,9 @@
 {% extends "main.html" %}
 
-{% block content %}    
+{% block content %}  
+{% include "navbar.html" %}  
     <!-- form -->
-
+<div class="mt8">
     <form action="" class="form">
         
         <label for="">Email</label>
@@ -17,5 +18,6 @@
         <button type="submit" class="btn">Create Now</button>
         <p>Already have an account <a href="{% url 'login' %}">login now</a></p>
     </form>
-
+</div>
+{% include "footer.html" %}
 {% endblock content %}
