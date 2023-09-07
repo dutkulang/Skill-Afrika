@@ -3,6 +3,7 @@ ALX end of foundations project
 
 ![site review](preview_assets/Screenshot%20from%202023-09-06%2017-50-26.png)
 
+![](preview_assets/Screenshot%20from%202023-09-06%2019-06-43.png)
 
 ---
 ## How to setup
@@ -34,4 +35,4 @@ ALX end of foundations project
 python3 manage.py runserver 
  ```
 
- 7. visit localhost:8000
+ 7. visit [local host](http://localhost:8000)
