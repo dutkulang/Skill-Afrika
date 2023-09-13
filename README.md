@@ -1,6 +1,12 @@
 # Skill-Afrika
 ALX end of foundations project
 
+---
+
+Africa as a continent has many young people skilled in the various computer sectors but still employers find it deficult to locate these talents, this is the problem that Skill Afrika as a platform aims to bridge. Connecting potential talents to employers by being a one stop place to find talent for hire on the African continent.
+
+---
+
 ![site review](preview_assets/Screenshot%20from%202023-09-06%2017-50-26.png)
 
 ![site review](preview_assets/Screenshot%20from%202023-09-06%2019-57-58.png)
